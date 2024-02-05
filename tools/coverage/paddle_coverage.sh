@@ -205,7 +205,6 @@ function gen_python_diff_html_report() {
 gen_python_diff_html_report || true
 
 # assert coverage lines
-
 echo "Assert Diff Coverage"
 
 python ${PADDLE_ROOT}/tools/coverage/coverage_lines.py coverage-diff.info 0.9 || COVERAGE_LINES_ASSERT=1
